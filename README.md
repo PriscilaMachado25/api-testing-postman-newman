@@ -21,14 +21,16 @@ This repository contains an automated testing suite designed to validate API end
 
 
 ### 📝 Scenarios Tested (Registration API)
+
 Based on the platform's authentication endpoints, I developed and executed the following test scenarios:
 
 * **Success Cases:**
-    * [cite_start]Full user registration with successful status code 201 Created. 
-    * [cite_start]Automatic Role Assignment (ensuring new users default to the 'ALUNO' role). 
+    * Full user registration with successful status code 201 Created.
+    * Automatic Role Assignment (ensuring new users default to the 'ALUNO' role).
+
 * **Validation & Error Handling (Negative Testing):**
-    * [cite_start]**Data Integrity:** Preventing registration with duplicate CPFs. 
-    * [cite_start]**Format Validation:** Blocking invalid email formats and non-standard CPF patterns (including checks for letters or symbols). 
-    * [cite_start]**Business Logic:** Preventing duplicate email registration. 
-    * [cite_start]**Required Fields:** Ensuring the API rejects requests with empty mandatory fields and malformed JSON. 
-    * [cite_start]**Security:** Validating password strength criteria to prevent weak credentials.
+    * **Data Integrity:** Preventing registration with duplicate CPFs.
+    * **Format Validation:** Blocking invalid email formats and non-standard CPF patterns (including checks for letters or symbols).
+    * **Business Logic:** Preventing duplicate email registration.
+    * **Required Fields:** Ensuring the API rejects requests with empty mandatory fields and malformed JSON.
+    * **Security:** Validating password strength criteria to prevent weak credentials.
